@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/BtJuego1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fallout3">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bt3">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego3"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/reddead">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego4"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skyrim">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego5"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lol">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego6"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/farcry5">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego7"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cuphead">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego8"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ageofempires2">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego9"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/forza3">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/BtJuego10"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seaofthieves">
+
+            </ImageButton>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

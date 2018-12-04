@@ -1,0 +1,5 @@
+Introduccion
+
+Durante las escenas iniciales tendras que ir eligiendo tus datos: sexo, nombre, rostro y pelo. 
+En cuanto termines con esto ya comenzara el juego con la primera misian Mis primeros pasos.
+
