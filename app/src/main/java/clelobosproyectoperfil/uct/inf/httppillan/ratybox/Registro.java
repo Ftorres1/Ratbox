@@ -26,7 +26,7 @@ public class Registro extends AppCompatActivity implements AdapterView.OnItemSel
     Button reg_btn;
     Spinner Genero;
     ArrayAdapter<String> aaZ;
-    String [] ArregloG = new String[] {"Femenino","Masculino", "Otro"};
+    String [] ArregloG = new String[] {"Femenino","Masculino","Otro"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +54,7 @@ public class Registro extends AppCompatActivity implements AdapterView.OnItemSel
         final String NomUser=reg_user.getText().toString();
         final String Contraseña=reg_pass.getText().toString();
         final String Correo=reg_cor.getText().toString();
-         String gen= Genero.getSelectedItem().toString();
+        String gen= Genero.getSelectedItem().toString();
 
         Response.Listener<String> respoListener = new Response.Listener<String>() {
             @Override
@@ -64,7 +64,8 @@ public class Registro extends AppCompatActivity implements AdapterView.OnItemSel
                     boolean success = jsonresponse.getBoolean("success");
 
                     if(success){
-                        Intent intent = new Intent(Registro.this,MainActivity.class);
+                        Intent intent;
+                        intent = new Intent(Registro.this, MainActivity.class);
                         Registro.this.startActivity(intent);
                     }else{
                         AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);

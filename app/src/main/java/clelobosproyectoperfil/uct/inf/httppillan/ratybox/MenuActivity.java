@@ -1,5 +1,6 @@
 package clelobosproyectoperfil.uct.inf.httppillan.ratybox;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.net.Uri;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
 
+    public static Context activity;
     ImageButton imgBt1, imgBt2, imgBt3, imgBt4;
 
     @Override

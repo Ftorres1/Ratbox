@@ -27,5 +27,12 @@ public class GuiaActivity extends AppCompatActivity {
             }
         });
 
+        bt2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intentDB = new Intent(GuiaActivity.this, DragonBallActivity.class);
+                GuiaActivity.this.startActivity(intentDB);
+            }
+        });
+
     }
 }

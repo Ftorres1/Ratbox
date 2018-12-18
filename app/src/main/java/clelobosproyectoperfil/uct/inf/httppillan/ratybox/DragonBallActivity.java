@@ -15,13 +15,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class Fallout3Activity extends AppCompatActivity {
+public class DragonBallActivity extends AppCompatActivity {
 
     TextView t;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fallout3);
+        setContentView(R.layout.activity_dragonball);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         leerarchivo.start();
     }
@@ -31,9 +31,9 @@ public class Fallout3Activity extends AppCompatActivity {
             try {
                 String dato = "";
                 String contents = "";
-                TextView t = (TextView) findViewById(R.id.infofallout1);
+                TextView t = (TextView) findViewById(R.id.infodb1);
 
-                URLConnection conn = new URL("http://pillan.inf.uct.cl/~mgonzalez/InfoJuegos/Fallout3/Introduccion.txt").openConnection();
+                URLConnection conn = new URL("http://pillan.inf.uct.cl/~mgonzalez/InfoJuegos/DragonBall/DB.txt").openConnection();
                 InputStream in = conn.getInputStream();
 
                 contents = readStream(in);

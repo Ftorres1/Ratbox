@@ -1,5 +1,6 @@
 package clelobosproyectoperfil.uct.inf.httppillan.ratybox;
 
+import android.content.Intent;
 import android.widget.Spinner;
 
 import com.android.volley.Response;
@@ -20,7 +21,6 @@ public class registerRequest extends StringRequest {
         params.put("Correo", Correo);
         params.put("Genero", gen+"");
     }
-
     @Override
     public Map<String, String> getParams() {
         return params;
