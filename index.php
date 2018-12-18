@@ -78,7 +78,8 @@
 	</hr>
 	</div>
     <div id="ADesc" style="display: none;">
-    	<a href="#" >Descarga Aqui</a>
+    	<a href="http://pillan.inf.uct.cl/~mgonzalez/InfoJuegos/Fallout3/Ratybox.apk
+" >Descarga Aqui</a>
     </div>
     <div id="pyr" style="display: none;">
 
