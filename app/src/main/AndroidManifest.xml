@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="clelobosproyectoperfil.uct.inf.httppillan.ratybox">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -19,12 +19,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registro" />
-        <activity android:name=".MenuActivity"/>
-        <activity android:name=".GuiaActivity"/>
-        <activity android:name=".PolicieActivity"/>
-        <activity android:name=".NoticiaActivity"/>
-        <activity android:name=".Fallout3Activity"/>
-
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".GuiaActivity" />
+        <activity android:name=".PolicieActivity" />
+        <activity android:name=".NoticiaActivity" />
+        <activity android:name=".Fallout3Activity" />
+        <activity
+            android:name=".barradesl"
+            android:label="@string/title_activity_barradesl"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"></activity>
     </application>
 
 </manifest>
