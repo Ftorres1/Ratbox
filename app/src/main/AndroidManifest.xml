@@ -28,9 +28,7 @@
             android:name=".barradesl"
             android:label="@string/title_activity_barradesl"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"></activity>
+
     </application>
 
 </manifest>

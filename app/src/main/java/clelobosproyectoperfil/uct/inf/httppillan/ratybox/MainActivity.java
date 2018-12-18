@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tv_registrar;
     TextView tv_login;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
 
 
 

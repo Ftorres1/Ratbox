@@ -26,7 +26,7 @@ public class Registro extends AppCompatActivity implements AdapterView.OnItemSel
     Button reg_btn;
     Spinner Genero;
     ArrayAdapter<String> aaZ;
-    String [] ArregloG = new String[] {"Femenino","Masculino"};
+    String [] ArregloG = new String[] {"Femenino","Masculino", "Otro"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +54,7 @@ public class Registro extends AppCompatActivity implements AdapterView.OnItemSel
         final String NomUser=reg_user.getText().toString();
         final String Contraseña=reg_pass.getText().toString();
         final String Correo=reg_cor.getText().toString();
-        final String genero= Genero.getSelectedItem().toString();
+         String gen= Genero.getSelectedItem().toString();
 
         Response.Listener<String> respoListener = new Response.Listener<String>() {
             @Override
@@ -81,7 +81,7 @@ public class Registro extends AppCompatActivity implements AdapterView.OnItemSel
 
 
 
-        registerRequest registerRequest = new registerRequest (NomUser, Contraseña, Correo, genero, respoListener );
+        registerRequest registerRequest = new registerRequest (NomUser, Contraseña, Correo, gen, respoListener );
         RequestQueue queue = Volley.newRequestQueue(Registro.this);
         queue.add(registerRequest);
     }
