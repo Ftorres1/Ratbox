@@ -64,7 +64,8 @@ public class Registro extends AppCompatActivity implements AdapterView.OnItemSel
                     boolean success = jsonresponse.getBoolean("success");
 
                     if(success){
-                        Intent intent = new Intent(Registro.this,MainActivity.class);
+                        Intent intent;
+                        intent = new Intent(Registro.this, MainActivity.class);
                         Registro.this.startActivity(intent);
                     }else{
                         AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
