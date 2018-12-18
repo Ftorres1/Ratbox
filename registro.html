@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ingrese datos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script>
+   function Validar(miForm){
+      if (this.NomUser.value=="") {
+        alert("Campo 'Nombre' no puede estar vacío");
+        this.NomUser.focus();
+        return false;
+      }
+        if (this.Contraseña.value!=this.pass2.value) {
+        alert("Las claves no coinciden");
+        this.Contraseña.focus();
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+   <form action="register.php" method="post" onsubmit="return Validar (this)">
+    <fieldset class="registro">
+      <h2>Registro: </h2>
+     <p id="p1">Usuario: <input type="text" id="NomUser" name="NomUser"> </p>
+      <p id="p1">Clave: <input type="password" id="Contraseña" name="Contraseña"> </p>
+     <p id="p1"> Repetir clave: <input type="password" id="pass2" name="pass2"> </p> 
+     <p id="p1"> Correo: <input type="email" id="Correo" name="Correo"> </p>
+      <p id="p1"> Genero: <input type="radio" name="Genero" id="Genero" value="Masculino"> <label for="Genero">Masculino</label> <br>
+             <input type="radio" name="Genero" id="Genero" value="Femenino"> <label for="Genero"> Femenino </label> </p>
+      <p id="p1"> </p>
+
+      <input type="submit" value="Enviar">
+      <br>
+     <a href="login.html">Ya tienes una cuenta? Inicia sesión aquí</a>
+     <br>
+     <a href="index.html">Regresar</a>
+      </fieldset>
+      </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<title>RatBox</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script>
+    function Validar(miForm){
+    	if (this.nomb.value=="") {
+    		alert("El campo 'Nombre' no puede estar vacío");
+    		this.nomb.focus();
+    		return false;
+    	}
+    		if (this.pass.value=="") {
+    		alert("El campo 'Clave' no puede estar vacío");
+    		this.pass.focus();
+    		return false;
+    	}
+    	return true;
+    }
+	</script>
+</head>
+<body>
+	<form action="login.php" onsubmit="return Validar(this)">
+		<fieldset class="inicio">
+			<h2>Iniciar Sesión </h2>
+			<p id="p1">Usuario: <input type="text" id="nomb" name="nomb"> </p>
+	
+	    <p id="p1">Clave: <input type="password" id="pass" name="pass"> </p>
+	  
+			<input type="submit" value="Enviar">
+			<br>
+			<a href="registro.html">No tienes cuenta? Creala aquí</a>
+			<br>
+			<a href="index.html">Regresar</a>
+			</fieldset>
+			</form>
+	</br>
+</body>
+</html>
